@@ -38,4 +38,12 @@ describe("<FocusLock />", () => {
     const focusedBtn = screen.getByRole("button", { name: "Focused Button" })
     expect(document.activeElement).toEqual(focusedBtn)
   })
+
+  test("correctly focuses on contentRef when no focusable elements exist", () => {
+    // TODO: Add test
+  })
+
+  test("correctly focuses on the finalFocusRef when the FocusLock is unmounted", () => {
+    // TODO: Add test
+  })
 })
